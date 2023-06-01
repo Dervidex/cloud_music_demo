@@ -1,0 +1,31 @@
+div {
+    margin: 0;
+    padding: 0;
+
+}
+.imgA {
+    transition: none 0s ease 0s;
+    opacity: 1;
+}
+.imgB {
+    transition: opacity 1s ease-out 0s;
+    opacity: 1;
+}
+.imgC {
+    transition: opacity 1s ease-in 0s;
+    opacity: 0.2;
+}
+.ulA {
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    list-style-type: none;
+    padding: 0;
+    transition: width 1s linear 0s;
+}
+.ulA li {
+    width: 130px;
+    float:left;
+    background-color: cyan;
+}
+

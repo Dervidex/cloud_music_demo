@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+
+<img id="img" class='imgA' src="./carousel/8.jpg" alt="" />
+<button id="1">1</button>
+<button id="2">2</button>
+<button id="3">3</button>
+
+<ul id="ul1" class="ulA">
+    <li>11</li>
+    <li>22</li>
+    <li>33</li>
+    <li>44</li>
+    <li>55</li>
+    <li>66</li>
+    <li>77</li>
+    <li>88</li>
+</ul>
+
+<script type="text/javascript" >
+    const img = document.getElementById('img')
+    const btn1 = document.getElementById('1')
+    const btn2 = document.getElementById('2')
+    const btn3 = document.getElementById('3')
+    const ul1 = document.getElementById('ul1')
+
+    btn1.addEventListener('click', () => {
+        img.style.transition = 'opacity 1s ease-in 0s'
+        img.style.opacity = '0.2'
+    })
+    btn2.addEventListener('click', () => {
+        img.style.transition = 'opacity 1s ease-out 0s'
+        img.style.opacity = '1'
+    })
+
+    btn3.addEventListener('click', () => {
+        ul1.style.width = '1000px'
+    })
+
+
+</script>
+</body>
+</html>

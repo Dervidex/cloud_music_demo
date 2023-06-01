@@ -1,0 +1,18 @@
+.djList {
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+    padding: 20px;
+    background-color: white;
+}
+.title {
+    display: flex;
+    font-size: 12px;
+    border-bottom: #cccccc 1px solid;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}

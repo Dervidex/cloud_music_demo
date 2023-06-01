@@ -1,0 +1,163 @@
+.musicHeaderMain {
+    display: flex;
+    background-color: #242424;
+    height: 70px;
+    width: 100%;
+    min-width: 100%;
+    color: #ddd;
+    align-items: center;
+    justify-content: center;
+}
+
+.topBarLogo {
+    height: 70px;
+    width: 176px;
+    background: url("../../../assets/topbar/topbar.png") no-repeat;
+}
+
+.headerMainTitle {
+    display: flex;
+    align-items: center;
+}
+
+.headerMainTitle div {
+    height: 70px;
+    position: relative;
+}
+
+.headerMainTitle span {
+    padding: 0 20px;
+    cursor: pointer;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.headerMainTitle span:hover {
+    background-color: black;
+    color: white;
+}
+
+.subCor {
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background: url("../../../assets/topbar/topbar.png") no-repeat -226px 0;
+}
+
+.dlTitle {
+    position: relative;
+}
+
+.hotTag {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    width: 30px;
+
+    background: url("../../../assets/topbar/topbar.png") -190px 0;
+}
+
+.searchBox {
+    background-color: white;
+    height: 32px;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 11px;
+    color: #888;
+    font-size: 14px;
+}
+
+.search {
+    width: 140px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 12px;
+    line-height: 12px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: relative;
+}
+
+.holder {
+    font-size: 12px;
+    position: absolute;
+    left: 32px;
+    color: #9b9b9b;
+}
+
+.creatorTitle {
+    height: 30px;
+    padding: 0 14px;
+    border-radius: 20px;
+    margin-left: 10px;
+    border: #6c6c6c 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.creatorTitle:hover {
+    color: white;
+    border: white 1px solid;
+    cursor: pointer
+}
+
+.login {
+    font-size: 12px;
+    display: flex;
+    margin-left: 15px;
+    color: grey;
+    padding: 5px;
+}
+
+.login:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+.titleHover {
+    background-color: black;
+    color: white;
+}
+
+.recommendBar {
+    background-color: #cb0909;
+    min-height: 4px;
+    color:#f2f2f2;
+    font-size: 12px;
+    display: flex;
+    padding-left:400px ;
+}
+
+.recommendBar span {
+    margin: 9px 20px;
+    padding: 1px 11px;
+}
+.recommendBar span:hover {
+    background-color: #9b0909;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.recommendBarHover {
+    background-color: #9b0909;
+    border-radius: 8px;
+    cursor: pointer;
+}

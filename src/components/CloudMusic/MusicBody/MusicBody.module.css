@@ -1,0 +1,10 @@
+.bodyBox {
+    display: flex;
+    justify-content: center;
+}
+.bodyLeft {
+    width: 730px;
+}
+.bodyRight {
+    width: 254px;
+}
