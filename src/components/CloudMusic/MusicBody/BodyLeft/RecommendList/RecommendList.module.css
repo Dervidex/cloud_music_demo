@@ -1,0 +1,19 @@
+.recommendList {
+    padding: 20px;
+}
+.contentList {
+    /*688 + 42*/
+    width: 730px;
+    margin-left: -42px;
+    margin-top: 20px;
+}
+.contentList::after {
+    content: '';
+    clear: both;
+    display: block;
+    margin-bottom: 20px;
+}
+.contentList li {
+    margin: 0 0 20px 42px;
+    float: left;
+}

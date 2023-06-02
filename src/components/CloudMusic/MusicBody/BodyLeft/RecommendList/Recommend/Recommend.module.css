@@ -1,0 +1,77 @@
+.imgBox {
+    width: 140px;
+    height: 140px;
+    position: relative;
+    background-color: cyan;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.topIcon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../../../../../../assets/icon2.png") no-repeat -135px -220px;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("../../../../../../assets/coverall.png") no-repeat 0 0;
+}
+.clickBox {
+    width: 100%;
+    height: 27px;
+    position: absolute;
+    bottom: 0;
+    background: url("../../../../../../assets/coverall.png") no-repeat 0 -537px;
+    color: #ccc;
+    display: flex;
+    align-items: center;
+}
+.earIcon {
+    width: 14px;
+    height: 11px;
+    margin: 2px 1px 0 10px;
+    background: url("../../../../../../assets/iconall.png") no-repeat 0 -24px ;
+    display: inline-block;
+}
+.click {
+    margin-left: 5px;
+}
+.playerIcon {
+    width: 16px;
+    height: 17px;
+    margin-left: 45px;
+    background: url("../../../../../../assets/iconall.png") no-repeat 0 0;
+}
+.playerIcon:hover {
+    background: url("../../../../../../assets/iconall.png") no-repeat 0 -60px;
+}
+.profile {
+    width: 140px;
+    height: 39px;
+    margin-top: 4px;
+    font-size: 14px;
+    display: inline-block;
+}
+.profile:hover {
+    text-decoration: underline;
+}
+
+.tagType1 {
+    width: 35px;
+    height: 15px;
+    margin: 2px 5px 0 0;
+    float:left;
+    background: url("../../../../../../assets/icon.png") no-repeat -31px -658px ;
+}

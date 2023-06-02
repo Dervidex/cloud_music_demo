@@ -6,6 +6,8 @@ const BodyLeft = (props: BodyLeftProps) => {
   return (
     <div className={`${props.className} ${Style.bodyLeft}`}>
       <RecommendList />
+
+      <div>123</div>
     </div>
   );
 };
