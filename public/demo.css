@@ -1,7 +1,9 @@
+* {
+    box-sizing: border-box;
+}
 div {
     margin: 0;
     padding: 0;
-
 }
 .imgA {
     transition: none 0s ease 0s;
@@ -15,17 +17,27 @@ div {
     transition: opacity 1s ease-in 0s;
     opacity: 0.2;
 }
+.divA {
+    width: 500px;
+    padding: 0 50px;
+    background-color: orange;
+}
 .ulA {
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    margin-left: -100px;
     background-color: red;
     list-style-type: none;
     padding: 0;
     transition: width 1s linear 0s;
 }
 .ulA li {
-    width: 130px;
+    width: 150px;
+    margin-left: 100px;
     float:left;
     background-color: cyan;
 }
-
+.clear1::after {
+    content: '';
+    display: block;
+    clear: both;
+}

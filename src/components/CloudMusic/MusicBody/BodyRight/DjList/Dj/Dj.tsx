@@ -11,7 +11,7 @@ const Dj = (props: DjProps) => {
 
       <a href="/#"><img src={imgUrl} alt=""/></a>
       <div className={Style.descBox}>
-        <a className={Style.name} href={'#'}>{name}</a>
+        <a className={Style.name} href={'/#'}>{name}</a>
         <span className={Style.profile}>{profile}</span>
       </div>
     </div>

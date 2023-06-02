@@ -7,7 +7,6 @@
 }
 .title {
     display: flex;
-    font-size: 12px;
     border-bottom: #cccccc 1px solid;
     align-items: center;
     justify-content: space-between;

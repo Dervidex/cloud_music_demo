@@ -23,7 +23,7 @@ const SingerList = () => {
 
       <div className={Style.recommend}>
 
-        <a href="#" style={{textDecoration: "none", color: "black"}}>
+        <a href="/#" >
           申请成为网易云音乐人
         </a>
       </div>

@@ -12,7 +12,7 @@
 .topBarLogo {
     height: 70px;
     width: 176px;
-    background: url("../../../assets/topbar/topbar.png") no-repeat;
+    background: url("../../../assets/topbar.png") no-repeat;
 }
 
 .headerMainTitle {
@@ -48,7 +48,7 @@
     left: 0;
     right: 0;
     overflow: hidden;
-    background: url("../../../assets/topbar/topbar.png") no-repeat -226px 0;
+    background: url("../../../assets/topbar.png") no-repeat -226px 0;
 }
 
 .dlTitle {
@@ -61,7 +61,7 @@
     top: 20px;
     width: 30px;
 
-    background: url("../../../assets/topbar/topbar.png") -190px 0;
+    background: url("../../../assets/topbar.png") -190px 0;
 }
 
 .searchBox {
@@ -87,7 +87,6 @@
     border: none;
     outline: none;
     background-color: white;
-    font-size: 12px;
     line-height: 12px;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -95,7 +94,6 @@
 }
 
 .holder {
-    font-size: 12px;
     position: absolute;
     left: 32px;
     color: #9b9b9b;
@@ -110,7 +108,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 12px;
 }
 
 .creatorTitle:hover {
@@ -120,7 +117,6 @@
 }
 
 .login {
-    font-size: 12px;
     display: flex;
     margin-left: 15px;
     color: grey;
@@ -142,7 +138,6 @@
     background-color: #cb0909;
     min-height: 4px;
     color:#f2f2f2;
-    font-size: 12px;
     display: flex;
     padding-left:400px ;
 }
