@@ -1,0 +1,92 @@
+.newAlbumList {
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border: #d3d3d3 1px solid;
+    position: relative;
+}
+
+.dataViewPort {
+    width: 645px;
+    height: 180px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.dataList {
+    width: 645px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    bottom: 0;
+    margin: auto;
+}
+.dataList li {
+    width: 118px;
+    height: 150px;
+    margin-left: 11px;
+    float: left;
+}
+
+.turnLeft, .turnRight {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: -22px;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.turnLeft {
+    background: url("../../../../../assets/index.png") no-repeat -260px -75px;
+    left: 5px;
+}
+
+.turnLeft:hover {
+    background: url("../../../../../assets/index.png") no-repeat -280px -75px;
+    cursor: pointer;
+}
+
+.turnRight {
+    background: url("../../../../../assets/index.png") no-repeat -300px -75px;
+    right: 5px;
+}
+
+.turnRight:hover {
+    background: url("../../../../../assets/index.png") no-repeat -320px -75px;
+    cursor: pointer;
+}
+
+.current {
+    left: 0;
+}
+
+.left1 {
+    left: -645px;
+}
+
+.left2 {
+    left: -1290px;
+}
+
+.right1 {
+    left: 645px;
+}
+
+.right2 {
+    left: 1290px;
+}
+
+.transOn {
+    transition: left 1500ms ease 0s;
+}
+
+.transOff {
+    transition: none 0s linear 0s;
+}

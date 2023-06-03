@@ -1,0 +1,69 @@
+.billBoard{
+    width: 230px;
+    border: #d3d3d3 1px solid;
+}
+.dataList li{
+    height: 32px;
+}
+.dataList .titleLi {
+    width: 230px;
+    height: 120px;
+}
+.titleBox {
+    padding: 20px 0 0 20px;
+}
+
+.titleIcon {
+    width: 80px;
+    height: 80px;
+    float: left;
+    position: relative;
+    margin-right: 10px;
+}
+
+.titleIcon img {
+    width: 100%;
+    height: 100%;
+    box-shadow: #525252 0 2px 2px;
+}
+.cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: url("../../../../../../assets/coverall.png") no-repeat -145px -57px;
+}
+.title{
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-top: 4px;
+}
+.title:hover {
+    text-decoration: underline;
+}
+.playIcon, .starIcon {
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+.playIcon {
+    background: url("../../../../../../assets/index.png") no-repeat -267px -205px;
+}
+.playIcon:hover {
+    background: url("../../../../../../assets/index.png") no-repeat -267px -235px;
+}
+.starIcon {
+    background: url("../../../../../../assets/index.png") no-repeat -300px -205px;
+    margin: 10px 0 0 10px
+}
+.starIcon:hover {
+    background: url("../../../../../../assets/index.png") no-repeat -300px -235px;
+}
+.backColor1 {
+    background-color: #f4f4f4;
+}
+.backColor2 {
+    background-color: #e8e8e8;
+}

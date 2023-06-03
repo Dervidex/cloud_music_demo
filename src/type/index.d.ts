@@ -5,7 +5,8 @@ export interface SingerModel {
   profile: string
 }
 
-export interface DjModel extends SingerModel {}
+export interface DjModel extends SingerModel {
+}
 
 export interface RecommendModel {
   id: number,
@@ -14,4 +15,15 @@ export interface RecommendModel {
   profile: string
   click: string,
   isTop?: boolean
+}
+export interface NewAlbumModel {
+  id: number
+  imgUrl: string,
+  title: string,
+  author: string
+}
+
+export interface SongModel {
+  id: number,
+  songName: string
 }

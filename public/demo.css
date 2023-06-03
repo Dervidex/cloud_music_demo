@@ -19,25 +19,56 @@ div {
 }
 .divA {
     width: 500px;
-    padding: 0 50px;
-    background-color: orange;
+    background-color: red;
+    /*overflow: hidden;*/
+}
+.divB {
+    width: 500px;
+    height: 20px;
+    /*overflow: hidden;*/
+    background-color: darkgreen;
+    position: relative;
 }
 .ulA {
     width: 500px;
-    margin-left: -100px;
-    background-color: red;
+    background-color: cyan;
     list-style-type: none;
+    /*transition: left 1s linear 0s;*/
     padding: 0;
-    transition: width 1s linear 0s;
+    margin: 0;
+
+    position: absolute;
+    left: 0;
 }
+
 .ulA li {
-    width: 150px;
-    margin-left: 100px;
-    float:left;
+    width: 100px;
+    height: 20px;
+    float: left;
+    background-color: orange;
+}
+
+.ulB {
+    left: 500px;
+}
+
+.divC {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background-color: red;
+}
+.divD {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
     background-color: cyan;
 }
-.clear1::after {
-    content: '';
-    display: block;
-    clear: both;
+.pA {
+    background-color: orange;
 }

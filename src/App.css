@@ -9,6 +9,10 @@ a {
     text-decoration: none;
     color: black;
 }
+/*去掉tab键自动点击<a>标签导致的outline*/
+a:focus-visible {
+    outline: none;
+}
 ul {
     list-style-type: none;
     padding: 0;

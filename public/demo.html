@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-  <link rel="stylesheet" href="./demo.css">
+    <link rel="stylesheet" href="./demo.css">
 </head>
 <body>
 
-<img id="img" class='imgA' src="./carousel/8.jpg" alt="" />
+<img id="img" class='imgA' src="./carousel/8.jpg" alt=""/>
 <button id="1">1</button>
 <button id="2">2</button>
 <button id="3">3</button>
+<button id="4">4</button>
 
-<div class="divA">
-    <div>
-        <ul id="ul1" class="ulA clear1">
-            <li>11</li>
-            <li>22</li>
-            <li>33</li>
-            <li>44</li>
-            <li>55</li>
-            <li>66</li>
-            <li>77</li>
-            <li>88</li>
-        </ul>
+<!--<div class="divA">-->
+<!--    <div class="divB">-->
+<!--        <ul id="ul1" class="ulA">-->
+<!--            <li>11</li>-->
+<!--            <li>22</li>-->
+<!--            <li>33</li>-->
+<!--            <li>44</li>-->
+<!--            <li>55</li>-->
+
+<!--        </ul>-->
+<!--        <ul id="ul2" class="ulA ulB">-->
+<!--            <li>66</li>-->
+<!--            <li>77</li>-->
+<!--            <li>88</li>-->
+<!--            <li>99</li>-->
+<!--            <li>1010</li>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+
+    <div class="divC">
+        <div class="divD"></div>
+<!--        <p class="pA">123</p>-->
     </div>
-
 </div>
 
 
-<h1 style="background-color: orange">AAAAAA</h1>
-<h1 >BBB</h1>
+<script type="text/javascript">
 
-<script type="text/javascript" >
     const img = document.getElementById('img')
     const btn1 = document.getElementById('1')
     const btn2 = document.getElementById('2')
     const btn3 = document.getElementById('3')
+    const btn4 = document.getElementById('4')
     const ul1 = document.getElementById('ul1')
+    const ul2 = document.getElementById('ul2')
+
+    let left = 500
+    let count = 1
+    let isEnableClick = true
 
     btn1.addEventListener('click', () => {
         img.style.transition = 'opacity 1s ease-in 0s'
@@ -49,7 +64,84 @@
     })
 
     btn3.addEventListener('click', () => {
-        ul1.style.width = '1000px'
+        if (!isEnableClick) return
+
+        isEnableClick = false
+
+        if (count === 3) count = 1
+
+        if (count === 1) {
+            ul2.style.transition = 'none 0s'
+            ul2.style.left = '-500px'
+
+            setTimeout(() => {
+                ul2.style.transition = 'left 1s linear 0s'
+                ul1.style.transition = 'left 1s linear 0s'
+
+                setTimeout(() => {
+                    ul1.style.left = '500px'
+                    ul2.style.left = '0px'
+
+                    isEnableClick = true
+
+                    count++
+                }, 1000)
+            }, 10)
+        } else if (count === 2) {
+            ul1.style.transition = 'none 0s'
+            ul1.style.left = '-500px'
+
+            setTimeout(() => {
+                ul2.style.transition = 'left 1s linear 0s'
+                ul1.style.transition = 'left 1s linear 0s'
+
+                setTimeout(() => {
+                    ul2.style.left = '500px'
+                    ul1.style.left = '0px'
+
+                    isEnableClick = true
+
+                    count++
+                }, 1000)
+            }, 10)
+        }
+    })
+
+    btn4.addEventListener('click', () => {
+        if (!isEnableClick) return
+
+        isEnableClick = false
+
+        ul2.style.transition = 'left 1s linear 0s'
+        ul1.style.transition = 'left 1s linear 0s'
+
+
+        if (count === 3) count = 1
+
+        if (count === 1) {
+            ul1.style.left = `-${left}px`
+            ul2.style.left = `${0}px`
+
+            setTimeout(() => {
+                ul1.style.transition = 'none 0s'
+                ul1.style.left = `${left}px`
+
+                isEnableClick = true
+
+            }, 1000)
+        } else if (count === 2) {
+            ul2.style.left = `-${left}px`
+            ul1.style.left = `${0}px`
+
+            setTimeout(() => {
+                ul2.style.transition = 'none 0s'
+                ul2.style.left = `${left}px`
+
+                isEnableClick = true
+            }, 1000)
+        }
+        count++
+
     })
 
 
