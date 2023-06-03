@@ -39,9 +39,9 @@ const BillBoard = (props: BillBoardProps) => {
            className={`${Style.songName} ${showOpr[index] ? Style.changeSongName : Style.recoverSongName}`}
            href="/#">{item.songName}</a>
         <div className={`${Style.operateIcon} ${showOpr[index] ? Style.showOperateIcon : Style.hiddenOperationIcon}`}>
-          <a className={Style.playIcon2} href="/#"></a>
-          <a className={Style.addIcon} href="/#"></a>
-          <a className={Style.starIcon2} href="/#"></a>
+          <a className={Style.playIcon2} href="/#" title={'播放'}></a>
+          <a className={Style.addIcon} href="/#" title={'添加到播放列表'}></a>
+          <a className={Style.starIcon2} href="/#" title={'收藏'}></a>
         </div>
       </li>
     )
@@ -59,7 +59,7 @@ const BillBoard = (props: BillBoardProps) => {
   }
 
   return (
-    <div className={Style.billBoard}>
+    <div className={`${Style.billBoard}`}>
       <ul className={Style.dataList}>
         <li className={`${Style.titleLi} ${Style.backColor1}`}>
           <div className={Style.titleBox}>

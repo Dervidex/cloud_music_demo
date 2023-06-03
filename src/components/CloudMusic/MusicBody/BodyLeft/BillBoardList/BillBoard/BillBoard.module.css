@@ -4,11 +4,12 @@
     border-left: #d3d3d3 1px solid;;
     border-bottom: #d3d3d3 1px solid;
 }
+
 .dataList li{
     height: 32px;
 }
 .dataList .titleLi {
-    width: 230px;
+    /*width: 230px;*/
     height: 120px;
 }
 .titleBox {
@@ -109,12 +110,21 @@
 .playIcon2 {
     background: url("../../../../../../assets/index.png") no-repeat -267px -268px;
 }
+.playIcon2:hover {
+    background: url("../../../../../../assets/index.png") no-repeat -267px -288px;
+}
 .addIcon {
     background: url("../../../../../../assets/icon.png") no-repeat 2px -698px;
+}
+.addIcon:hover {
+    background: url("../../../../../../assets/icon.png") no-repeat -20px -698px;
 }
 .starIcon2 {
     background: url("../../../../../../assets/index.png") no-repeat -297px -268px;
 
+}
+.starIcon2:hover {
+    background: url("../../../../../../assets/index.png") no-repeat -297px -288px;
 }
 .all {
     line-height: 32px;
