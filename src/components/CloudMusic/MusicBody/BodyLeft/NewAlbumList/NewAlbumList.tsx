@@ -10,7 +10,7 @@ const NewAlbumList = () => {
   const newAlbumData = useAppSelector(state => state.NewAlbumData)
 
   const mapped = newAlbumData.map(item => {
-    return <li key={item.id}><NewAlbum {...item} /></li>
+    return <li key={item.id}><NewAlbum key={item.id} {...item} /></li>
   })
 
   const conListReducer = useCallback((prevState: ControlDataModel[], type: string) => {

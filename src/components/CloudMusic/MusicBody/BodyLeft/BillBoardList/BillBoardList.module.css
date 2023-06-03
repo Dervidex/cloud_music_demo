@@ -1,0 +1,7 @@
+.billBoardList {
+    padding: 20px;
+}
+.boardList {
+    display: flex;
+    margin-top: 20px;
+}

@@ -11,7 +11,7 @@ const BodyLeft = (props: BodyLeftProps) => {
 
       <NewAlbumList />
 
-      {/*<BillBoardList />*/}
+      <BillBoardList />
     </div>
   );
 };

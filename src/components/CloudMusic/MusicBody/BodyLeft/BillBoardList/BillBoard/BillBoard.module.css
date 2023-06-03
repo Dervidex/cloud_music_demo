@@ -1,6 +1,8 @@
 .billBoard{
     width: 230px;
-    border: #d3d3d3 1px solid;
+    border-top: #d3d3d3 1px solid;;
+    border-left: #d3d3d3 1px solid;;
+    border-bottom: #d3d3d3 1px solid;
 }
 .dataList li{
     height: 32px;
@@ -61,9 +63,84 @@
 .starIcon:hover {
     background: url("../../../../../../assets/index.png") no-repeat -300px -235px;
 }
+.songItem{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.number, .topNumber {
+    width: 20px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 15px;
+    color: gray;
+    margin: 0 4px 0 20px;
+    display: inline-block;
+}
+.topNumber{
+    color: #c10d0c;
+}
+.songName {
+    width: 170px;
+    height: 32px;
+    line-height: 32px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.songName:hover {
+    text-decoration: underline;
+}
+.operateIcon {
+    display: none;
+    width:  80px;
+    height: 17px;
+    /*background-color: red;*/
+}
+.operateIcon a {
+    width: 17px;
+    height: 17px;
+    margin: 0 4px;
+    display: inline-block;
+}
+.playIcon2 {
+    background: url("../../../../../../assets/index.png") no-repeat -267px -268px;
+}
+.addIcon {
+    background: url("../../../../../../assets/icon.png") no-repeat 2px -698px;
+}
+.starIcon2 {
+    background: url("../../../../../../assets/index.png") no-repeat -297px -268px;
+
+}
+.all {
+    line-height: 32px;
+    display: inline-block;
+    margin-left: 140px;
+}
+
+.all:hover {
+    text-decoration: underline;
+}
+
 .backColor1 {
     background-color: #f4f4f4;
 }
 .backColor2 {
     background-color: #e8e8e8;
+}
+.showOperateIcon {
+    display: block;
+}
+.hiddenOperationIcon {
+    display: none;
+}
+.changeSongName{
+    width: 90px;
+}
+.recoverSongName {
+    width: 170px;
 }

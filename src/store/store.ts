@@ -5,6 +5,8 @@ import DjSlice from "./reducer/DjSlice";
 import RecommendSlice from "./reducer/RecommendSlice";
 import NewAlbumSlice from "./reducer/NewAlbumSlice";
 import OriginBoardSlice from "./reducer/OriginBoardSlice";
+import SoarBoardSlice from "./reducer/SoarBoardSlice";
+import NewestBoardSlice from "./reducer/NewestBoardSlice";
 
 const store = configureStore({
   reducer: {
@@ -13,7 +15,9 @@ const store = configureStore({
     'DjData' : DjSlice.reducer,
     'RecommendData' : RecommendSlice.reducer,
     'NewAlbumData' : NewAlbumSlice.reducer,
-    'OriginBoardData' : OriginBoardSlice.reducer
+    'OriginBoardData' : OriginBoardSlice.reducer,
+    'SoarBoardData' : SoarBoardSlice.reducer,
+    'NewestBoardData' : NewestBoardSlice.reducer
   }
 })
 
