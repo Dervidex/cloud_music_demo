@@ -6,7 +6,7 @@ import BodyRight from "./BodyRight/BodyRight";
 
 const MusicBody = () => {
   return (
-    <div >
+    <div className={Style.musicBody}>
       <CarouselImg />
       <div className={Style.bodyBox}>
         <BodyLeft className={Style.bodyLeft}/>

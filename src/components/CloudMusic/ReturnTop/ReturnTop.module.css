@@ -1,0 +1,24 @@
+.returnTop {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    bottom: 160px;
+    left: 50%;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    border: #e1e1e1 2px solid;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+.returnTop:hover {
+    background-color: #ededed;
+}
+.icon {
+    color: #b4b0b0;
+}
+.top {
+    color: #333;
+}

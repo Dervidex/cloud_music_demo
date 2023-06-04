@@ -1,3 +1,6 @@
+.musicBody {
+    border-bottom: #e1e1e1 2px solid;
+}
 .bodyBox {
     display: flex;
     justify-content: center;

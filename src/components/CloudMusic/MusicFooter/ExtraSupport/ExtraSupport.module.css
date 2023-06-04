@@ -1,0 +1,67 @@
+.supportList {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+.supportList li {
+    display: flex;
+    width: 45px;
+    flex-direction: column;
+    /*background-color: red;*/
+    align-items: center;
+    margin: 0 40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.supportList li a {
+    width: 45px;
+    height: 45px;
+    margin-bottom:10px;
+    background-size: 220px 220px !important;
+    display: block;
+}
+.supportList li span{
+    white-space: nowrap;
+}
+.openPlatform {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -170px -5px;
+}
+.openPlatform:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -5px -115px;
+
+}
+.trade {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -5px -170px;
+}
+.trade:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -60px -170px;
+}
+.studio {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -5px -60px;
+}
+.studio:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -60px -5px;
+}
+.userAuth {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -60px -60px;
+}
+.userAuth:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -115px -5px;
+}
+.musicPlatform {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -115px -115px;
+}
+.musicPlatform:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -5px -5px;
+}
+.reward {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -170px -115px;
+}
+.reward:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -60px -115px;
+}
+.videoPrize {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -170px -60px;
+}
+.videoPrize:hover {
+    background: url("../../../../assets/foot_enter_new2.png") no-repeat -115px -60px;
+}
