@@ -43,7 +43,7 @@
     display: block;
     margin-top: 4px;
 }
-.title:hover {
+.title:hover, .songName:hover, .all:hover {
     text-decoration: underline;
 }
 .playIcon, .starIcon {
@@ -92,9 +92,7 @@
     text-overflow: ellipsis;
     display: inline-block;
 }
-.songName:hover {
-    text-decoration: underline;
-}
+
 .operateIcon {
     display: none;
     width:  80px;
@@ -130,10 +128,6 @@
     line-height: 32px;
     display: inline-block;
     margin-left: 140px;
-}
-
-.all:hover {
-    text-decoration: underline;
 }
 
 .backColor1 {

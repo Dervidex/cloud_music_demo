@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect, useRef, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Style from './MusicPlayerBar.module.css'
 import ReactDOM from "react-dom";
 
@@ -9,7 +9,7 @@ const MusicPlayerBar = () => {
   const [isLock, setIsLock] = useState(false)
   const [currentBarOffsetX, setCurrentBarOffsetX] = useState(0)
   const [isAllowMove, setIsAllowMove] = useState(false)
-  const [clientXOffset, setClientXOffset] = useState(0)
+  const [, setClientXOffset] = useState(0)
   const [nowTime, setNowTime] = useState('00:00')
   const allTime = 300
 
