@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import Style from './ReturnTop.module.css'
+
 
 
 const ReturnTop = () => {
 
-  const scrollTopHandler = () => {
 
+
+  const scrollTopHandler = () => {
+    document.documentElement.scrollTop = 0
   }
 
   return (

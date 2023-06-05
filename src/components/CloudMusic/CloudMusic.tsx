@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import Style from './CloudMusic.module.css'
 import MusicHeader from "./MusicHeader/MusicHeader";
 import MusicBody from "./MusicBody/MusicBody";
@@ -6,17 +6,24 @@ import MusicFooter from "./MusicFooter/MusicFooter";
 import ReturnTop from "./ReturnTop/ReturnTop";
 
 const CloudMusic = () => {
-  const divRef = useRef(null)
-  const changeHandler = () => {
-    console.log((divRef.current as any).scrollTop);
+  const [showTop, setShowTop] = useState(false)
+
+  document.onscroll = () => {
+    if (document.documentElement.scrollTop < 1) {
+      setShowTop(false)
+    } else {
+      setShowTop(true)
+    }
   }
+
+
   return (
-    <div onScroll={changeHandler} ref={divRef} className={Style.cloudMusic}>
+    <div className={Style.cloudMusic}>
       <MusicHeader />
       <MusicBody />
       <MusicFooter />
 
-      <ReturnTop />
+      {showTop && <ReturnTop />}
     </div>
   );
 };
