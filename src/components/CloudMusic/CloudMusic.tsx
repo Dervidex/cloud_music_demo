@@ -4,26 +4,34 @@ import MusicHeader from "./MusicHeader/MusicHeader";
 import MusicBody from "./MusicBody/MusicBody";
 import MusicFooter from "./MusicFooter/MusicFooter";
 import ReturnTop from "./ReturnTop/ReturnTop";
+import MusicPlayerBar from "./MusicPlayerBar/MusicPlayerBar";
 
 const CloudMusic = () => {
   const [showTop, setShowTop] = useState(false)
 
-  document.onscroll = () => {
-    if (document.documentElement.scrollTop < 1) {
+  const divRef = useRef(null)
+
+  const toggleTopHandler = (e: any) => {
+    if (e.target.scrollTop < 1) {
       setShowTop(false)
     } else {
       setShowTop(true)
     }
   }
 
+  const turnTopHandler = () => {
+    (divRef.current as any).scrollTop = 0
+  }
 
   return (
-    <div className={Style.cloudMusic}>
+    <div ref={divRef} onScroll={toggleTopHandler} className={Style.cloudMusic}>
       <MusicHeader />
       <MusicBody />
       <MusicFooter />
 
-      {showTop && <ReturnTop />}
+      {showTop && <ReturnTop onClick={turnTopHandler}/>}
+
+      <MusicPlayerBar />
     </div>
   );
 };

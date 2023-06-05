@@ -6,11 +6,10 @@ import NewAlbum from "./NewAlbum/NewAlbum";
 
 
 const NewAlbumList = () => {
-  console.log('newAlbumList');
   const newAlbumData = useAppSelector(state => state.NewAlbumData)
 
   const mapped = newAlbumData.map(item => {
-    return <li key={item.id}><NewAlbum key={item.id} {...item} /></li>
+    return <li key={item.id}><NewAlbum {...item} /></li>
   })
 
   const conListReducer = useCallback((prevState: ControlDataModel[], type: string) => {

@@ -1,0 +1,183 @@
+.musicPlayerBar {
+    position: fixed;
+    bottom: -44px;
+    width: 100%;
+    height: 67px;
+}
+.expandBar {
+    height: 20px;
+}
+.bar{
+    height: 47px;
+    background-color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playOpr {
+    display: flex;
+    align-items: center;
+}
+.playOpr a {
+    margin: 0 4px;
+}
+.prevIcon,
+.nextIcon {
+    width: 28px;
+    height: 28px;
+}
+.prevIcon {
+    background: url("../../../assets/playbar.png") no-repeat 0 -130px;
+}
+.playIcon {
+    width: 36px;
+    height: 36px;
+    background: url("../../../assets/playbar.png") no-repeat 0 -204px;
+}
+.nextIcon {
+    background: url("../../../assets/playbar.png") no-repeat -80px -130px;
+}
+.lock{
+    position: absolute;
+    width: 52px;
+    height: 20px;
+    background: url("../../../assets/playbar.png") no-repeat 0 -380px;
+    right: 20px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lockIcon,
+.unlockIcon {
+    width: 18px;
+    height: 18px;
+    margin-top: 5px;
+    background: url("../../../assets/playbar.png") no-repeat -100px -380px;
+}
+.lockIcon:hover {
+    background: url("../../../assets/playbar.png") no-repeat -100px -400px;
+}
+.unlockIcon {
+    background: url("../../../assets/playbar.png") no-repeat -80px -380px;
+}
+.unlockIcon:hover {
+    background: url("../../../assets/playbar.png") no-repeat -80px -400px;
+}
+.maskBox {
+    position: relative;
+    margin: 0 20px 0 25px;
+}
+.maskImg{
+    width: 34px;
+    height: 34px;
+}
+.mask {
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    left: 0;
+    top: 0;
+    background: url("../../../assets/playbar.png") no-repeat 0 -80px;
+}
+
+.playerWrapper {
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.songName {
+    color: #e8e8e8;
+}
+.singer {
+    color: #9b9b9b;
+    margin-left: 12px;
+}
+.songName:hover, .singer:hover {
+    text-decoration: underline;
+}
+
+.player {
+    position: relative;
+}
+.totalBar {
+    width: 466px;
+    height: 9px;
+    background: url("../../../assets/statbar.png") no-repeat right 0;
+}
+.currentBar {
+    height: 9px;
+    position: absolute;
+    top: 0;
+    background: url("../../../assets/statbar.png") no-repeat left -66px;
+}
+.dragBtn {
+    width: 22px;
+    height: 24px;
+    position: absolute;
+    right: -10px;
+    top: -7px;
+    background: url("../../../assets/iconall.png") no-repeat 0 -250px;
+
+    user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+.timeWrapper {
+    color: #797979;
+    margin: 15px 20px 0 10px;
+}
+.nowTime {
+    color: #a1a1a1;
+}
+.allTime {
+    color: #797979;
+}
+.opr2, .opr3 {
+    display: flex;
+    margin: 0 10px;
+}
+.opr2 a,.opr3 a{
+    width: 25px;
+    height: 25px;
+    margin: 0 1px;
+}
+.pipLyric {
+    background: url("../../../assets/oprIcon/1.png") no-repeat 0 0;
+}
+.start {
+    background: url("../../../assets/playbar.png") no-repeat -88px -163px;
+}
+.share {
+    background: url("../../../assets/playbar.png") no-repeat -114px -163px;
+}
+.sound {
+    background: url("../../../assets/playbar.png") no-repeat -2px -248px;
+}
+.roll {
+    background: url("../../../assets/playbar.png") no-repeat -66px -344px;
+}
+.opr3 .songList {
+    width: 60px;
+    height: 25px;
+    padding-left: 30px;
+    line-height:25px;
+    color: #666;
+    background: url("../../../assets/playbar.png") no-repeat -42px -68px;
+}
+.showBar {
+    transition: bottom 200ms linear 0s;
+    bottom: 0;
+}
+
+.hiddenBar {
+    transition: bottom 200ms linear 800ms;
+    bottom: -44px;
+}
+
+.lockBar {
+    bottom: 0;
+}

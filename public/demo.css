@@ -68,3 +68,8 @@ div {
 .pA {
     background-color: orange;
 }
+.divE {
+    width: 200px;
+    height: 200px;
+    background: url("./carousel/1.jpg") no-repeat right 0 red;
+}
