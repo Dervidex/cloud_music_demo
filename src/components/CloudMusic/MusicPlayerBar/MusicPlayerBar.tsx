@@ -52,7 +52,6 @@ const MusicPlayerBar = () => {
     setIsAllowMove(() => true)
   }
   const dragBtnMoveHandler = (e: any) => {
-    if (isAllowMove) {
 
       setClientXOffset(clientXState => {
 
@@ -71,7 +70,7 @@ const MusicPlayerBar = () => {
 
         return e.clientX
       })
-    }
+
   }
   const dragBtnUpHandler = (e: any) => {
     setIsAllowMove(() => false)
@@ -83,7 +82,7 @@ const MusicPlayerBar = () => {
 
   return ReactDOM.createPortal((
     <div onMouseUp={dragBtnUpHandler}
-         onMouseMove={dragBtnMoveHandler}
+         onMouseMove={isAllowMove?dragBtnMoveHandler:undefined}
          onMouseOver={showBarHandler}
          onMouseLeave={hiddenBarHandler}
          className={`${Style.musicPlayerBar} ${isHidden ? Style.hiddenBar : Style.showBar} ${isLock ? Style.lockBar : ''}`}>
